@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Box xmlns:mx="http://www.adobe.com/2006/mxml" updateComplete="init()">
+
+	<mx:Script>
+		<![CDATA[
+			import com.adobe.webapis.flickr.Photo;
+			import mx.core.Application;
+			
+			public function init():void{
+				pic.source = 'http://static.flickr.com/' + data.server + '/' + data.id + '_' + data.secret + '_m.jpg';
+			}
+			[Bindable] public var position:int = -7 + Math.floor(Math.random()*(7+7+1));
+		]]>
+	</mx:Script>
+	
+	<mx:Box styleName="imgContainer" width="150" height="160">
+		<mx:Image id="pic" styleName="pic" width="120" height="120"  rotation="{position}"/>
+		<mx:Label styleName="picLabel" width="100" text="{data.title}"/>
+	</mx:Box>
+</mx:Box>

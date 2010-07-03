@@ -1,0 +1,51 @@
+Application {
+	font-family: Georgia, serif;
+  	font-size: 14px;
+  	font-style: italic;
+  	color: #3C3C3C;
+
+}
+
+TileList {
+	horizontalAlign: center;
+	background-color: #BEBEBE;
+	selectionColor: #BEBEBE;
+	paddingLeft: 40px;
+	paddingTop: 20px;
+}
+
+.imgContainer {
+	paddingLeft: 10px;
+	paddingTop: 10px;
+}
+
+.pic {
+	paddingTop: 5px;
+	paddingLeft: 5px;
+	horizontalAlign: center;
+}
+
+.picLabel {
+	font-family: Georgia, serif;
+  	font-size: 12px;
+  	font-style: italic;
+  	color: #696969;
+}
+
+.h {
+	paddingTop: 0;
+}
+
+.daPic {
+	paddingBottom: 30px;
+
+}
+
+.info {
+  	color: #8C8C8C;
+  	font-size: 18px;
+}
+
+.picContainer {
+	paddingTop: 40px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+	 backgroundGradientColors="[0xAAAAAA,0x000000]"
+	 layout="vertical">
+<mx:Style source="style.css" />
+
+	<mx:Script source="includes/gallFlickr.as" />
+	<mx:Image source="@Embed(source='images/header.png')" styleName="h" height="69" width="640"/>
+		<mx:ApplicationControlBar width="100%">
+		<mx:Label text="Таг:"/>
+		<mx:TextInput id="tagSearch" text=""/>
+		<mx:Label text="Текст:"/>
+		<mx:TextInput id="textSearch" text=""/>
+		<mx:Label text="ID на потребител:"/>
+		<mx:TextInput id="userSearch" text="40958151@N05"/>
+		<mx:Button label="Търси" id="btnSearch" click="getImages()"/>
+	</mx:ApplicationControlBar>
+	<mx:TileList useRollOver="false" width="100%" height="100%" id="picsList"
+		dataProvider="{photos}" itemRenderer="iconRenderer"
+		itemClick="showBigPic(event.itemRenderer.data.id)" >
+	</mx:TileList>
+</mx:Application>
